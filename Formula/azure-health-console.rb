@@ -1,11 +1,10 @@
 class AzureHealthConsole < Formula
   desc "Read-only Azure health console: triage, dependencies, cost and security in a local page"
   homepage "https://github.com/RafaelSonego/azure-health-console"
-  url "https://files.pythonhosted.org/packages/source/a/azure-health-console/azure_health_console-1.1.0.tar.gz"
-  sha256 "9941fd78e847c0ba401c6fd9456520d3cab492ee43ea48eded55e7471d795605"
+  url "https://files.pythonhosted.org/packages/source/a/azure-health-console/azure_health_console-1.1.1.tar.gz"
+  sha256 "f5cc152459ebc593d54eaf05bb06d573ed6a2e3a2de98342878c8b05762c258f"
   license "MIT"
 
-  depends_on "azure-cli"
   depends_on "python@3.13"
 
   def install
@@ -17,6 +16,7 @@ class AzureHealthConsole < Formula
 
   def caveats
     <<~EOS
+      Needs the Azure CLI: `brew install --cask azure-cli`.
       Sign in with `az login`, then run `azure-health-console` to open the console on 127.0.0.1.
     EOS
   end
