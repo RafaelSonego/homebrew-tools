@@ -1,8 +1,8 @@
 class AzureHealthConsole < Formula
   desc "Read-only Azure health console: triage, dependencies, cost and security in a local page"
   homepage "https://github.com/RafaelSonego/azure-health-console"
-  url "https://files.pythonhosted.org/packages/source/a/azure-health-console/azure_health_console-1.1.1.tar.gz"
-  sha256 "f5cc152459ebc593d54eaf05bb06d573ed6a2e3a2de98342878c8b05762c258f"
+  url "https://files.pythonhosted.org/packages/source/a/azure-health-console/azure_health_console-1.1.2.tar.gz"
+  sha256 "ce6314df9d8db0390fbf040a5373cf9268ee0d4389f5d1b05ef399530581b00b"
   license "MIT"
 
   depends_on "python@3.13"
